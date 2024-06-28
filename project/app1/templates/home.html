@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:pink;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: darkmagenta;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .user-info {
+            font-size: 16px;
+            color: #666;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .widget {
+            padding: 20px;
+            background-color: rgb(250, 163, 178);
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .widget h2 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .widget p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <div class="user-info">
+                Welcome, John Doe | <a href="#">Logout</a>
+            </div>
+        </div>
+
+        <div class="dashboard">
+            <div class="widget">
+                <h2>Widget 1</h2>
+                <p>This is the content of Widget 1.</p>
+            </div>
+            <div class="widget">
+                <h2>Widget 2</h2>
+                <p>This is the content of Widget 2.</p>
+            </div>
+            <!-- Add more widgets as needed -->
+        </div>
+    </div>
+</body>
+</html>
